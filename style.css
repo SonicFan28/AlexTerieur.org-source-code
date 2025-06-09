@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(tomato, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#MainTitle{
+    font-family: sans-serif;
+    color: lightskyblue;
+    
+    animation-play-state: running;
+    animation: TitleAnim;
+    animation-iteration-count: 1;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+#MainThing{
+    font-family: sans-serif;
+
+    animation-play-state: running;
+    animation: ThingAnim;
+    animation-iteration-count: 1;
+    animation-duration: 3.15s;
+    animation-timing-function: ease;
+}
+
+#ILEARNEDIT{
+    background: linear-gradient(to right, skyblue, red, lightgreen, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#GitHubLink:hover{
+    animation: GitHubAnim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+#TextSourceCode{
+    font-family: monospace, sans-serif;
+    font-size: 30px;
+}
+
+#GitHubLink{
+    background-color: lightgray;
+    border-radius: 100px;
+    padding: 30px;
+}
+
+@keyframes TitleAnim {
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}
+
+@keyframes ThingAnim {
+    from{margin-top: 100%;}
+    to{margin-top: 0%;}
+}
+
+@keyframes GitHubAnim {
+    50% {transform: scale(1.5, 1.5);}
+}
